@@ -3,9 +3,9 @@ class Question
   attr_reader :first_number, :second_number, :answer
 
   # Try initializing with passed-in values
-  def initialize
-    @first_number = rand(20)
-    @second_number = rand(20)
+  def initialize (num1, num2)
+    @first_number = num1
+    @second_number = num2
     @answer = @first_number + @second_number
   end
 

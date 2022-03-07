@@ -8,7 +8,7 @@ class Game
     @active = true
     @player1 = Player.new
     @player2 = Player.new
-
+    @turn = 1
   end
 
   def end_game
@@ -25,6 +25,14 @@ class Game
     else
       puts "P1: #{@player1.lives}/3 vs P2: #{@player2.lives}/3"
     end
+  end
+
+  def change_turn
+    @turn = @turn == 1 ? 2 : 1
+  end
+
+  def get_current_player
+    @turn == 1 ? @player1 : @player2
   end
 
 end
