@@ -2,7 +2,6 @@ class Question
 
   attr_reader :first_number, :second_number, :answer
 
-  # Try initializing with passed-in values
   def initialize (num1, num2)
     @first_number = num1
     @second_number = num2
@@ -23,9 +22,3 @@ class Question
 
 end
 
-# question1 = Question.new
-# puts question1.first_number
-# puts question1.second_number
-# puts question1.answer
-# answer = gets.chomp.to_i
-# puts question1.check_answer(answer)

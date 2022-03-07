@@ -36,16 +36,3 @@ class Game
   end
 
 end
-
-# game = Game.new
-# puts game.player1.lives
-# puts game.player2.lives
-# puts game.active
-
-# game.player1.decrease_lives
-# game.player1.decrease_lives
-# game.player1.decrease_lives
-
-
-# game.check_winner
-# game.end_game
