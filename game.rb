@@ -32,7 +32,7 @@ class Game
   end
 
   def get_current_player
-    @turn == 1 ? @player1 : @player2
+    @turn == 1 ? @player2 : @player1
   end
 
 end

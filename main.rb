@@ -13,7 +13,7 @@ while game.active do
     puts "Player #{game.turn}: " + question.ask_question
     answer = gets.chomp.to_i
     if question.check_answer(answer) 
-      puts "P1: YES! You are correct"
+      puts "Player #{game.turn}: YES! You are correct"
     else
       puts "Player #{game.turn}: Seriously? No!"
       current_player.decrease_lives
