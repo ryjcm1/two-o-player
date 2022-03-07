@@ -2,7 +2,7 @@ require "./player"
 
 class Game
 
-  attr_reader :player1, :player2, :active
+  attr_reader :player1, :player2, :active, :turn
 
   def initialize
     @active = true
